@@ -5,7 +5,7 @@ library(rtweet)
 library(httr)
 
 # Set up your Twitter API credentials
-app <- oauth_app("twitter", key = "dy2ck1HSxjFpt4FxYThMgMgSF", secret = "DJzqWH9imyxEumDKqAfkJsD65bHEDkBJYyMa2KqFrapiZ")
+app <- oauth_app("twitter", key = "dy2ck1HSxjFpt4FxYThMgMgSF", secret = "")
 token <- oauth2.0_token(oauth_endpoints("twitter"), app)
 
 # Set up rtweet to use the token
