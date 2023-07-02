@@ -4,12 +4,27 @@ install.packages("httr")
 library(rtweet)
 library(httr)
 
-# Set up your Twitter API credentials
-app <- oauth_app("twitter", key = "dy2ck1HSxjFpt4FxYThMgMgSF", secret = "")
-token <- oauth2.0_token(oauth_endpoints("twitter"), app)
 
-# Set up rtweet to use the token
-rtweet:::set_token(token)
+# whatever name you assigned to your created app
+appname <- "y1675182855398227973jsf9162"
+
+## api key 
+key <- "dy2ck1HSxjFpt4FxYThMgMgSF"
+
+## api secret 
+secret <- "yourSecretKeyHere"
+
+
+
+# create token named "twitter_token"
+twitter_token <- create_token(
+  app = appname,
+  consumer_key = key,
+  consumer_secret = secret,
+  access_token = "1675175262919569408-Az4MuAKrSeJ4WDF6DKfKO4H1HuVrXs",
+  access_secret = access_secret)
+
+
 
 # Search for tweets with the specified criteria
 tweets <- search_tweets(
