@@ -1,4 +1,5 @@
-#This R Script will help create an interactive plot using the Tweets.CSV provided in class
+#Josh Feinstein
+#This R Script will help create an interactive map using the Tweets.CSV provided in class
 # load twitter library - the rtweet library is recommended now over twitteR
 library(leaflet)
 library(dplyr)
